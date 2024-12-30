@@ -38,6 +38,7 @@ body {
     width: 90%;
     max-width: 800px;
     padding: 20px;
+    margin: auto;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -68,40 +69,6 @@ body {
     margin: 0 0 10px;
     text-align: center;
 }
-
-.team input {
-    width: 100%; 
-    margin-bottom: 5px;
-    padding: 10px;
-    font-size: 1em;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.btn {
-    width: 100%; 
-    padding: 10px;
-    margin: auto;
-    margin-bottom: 30px;
-    font-size: 1em;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color: #0056b3;
-}
-
-.grupo-box {
-    background-color: #e9ecef;
-    margin-bottom: 5px;
-    padding: 10px;
-    border-radius: 5px;
-}
-
 
 /* Media Queries para responsividade */
 
@@ -149,5 +116,3 @@ body {
         font-size: 1em; 
     }
 }
-
-
