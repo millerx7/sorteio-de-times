@@ -1,63 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Sorteador</title>
-</head>
-<body>
-    
-
-    <div class="container">
-
-        <div class="logo">
-            <img src="./img/logo.png" alt="logo racha raiz">
-            <h2>Sorteador de Times</h2>
-        </div>
-
-        <div class="container-times">
-
-            <div class="team" id="team1">
-                <h2>Bom</h2>
-                <input type="text" id="team1-player1Bom" placeholder="jogador 1">
-                <input type="text" id="team1-player2Bom" placeholder="jogador 2">
-                <input type="text" id="team1-player3Bom" placeholder="jogador 3">
-                <input type="text" id="team1-player4Bom" placeholder="jogador 4">
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sorteio Times</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body class="bg-black">
+    <div class="d-flex justify-content-center pt-3">
+        <img src="./img/logo.png" alt="" width="100px">
+    </div>
+    <div class="d-flex justify-content-center">
+        <h1 class="display-5 text-light">Sorteio Times</h1>
+    </div>
+    <div class="container text-light pt-5 " style="height: 100%;">
+        <div class="row h-50 d-flex">
+            <div class="col-12 col-md-3 h-50">
+                <h3 class="h3 text-center">Bons</h3>
+                <div class="input-group h-100" >
+                    <textarea id="textarea1" class="form-control" aria-label="With textarea" ></textarea>
+                </div>
             </div>
-            
-            <div class="team">
-                <h2>Intermediário</h2>
-                <input type="text" id="team2-player1Medio" placeholder="jogador 1">
-                <input type="text" id="team2-player2Medio" placeholder="jogador 2">
-                <input type="text" id="team2-player3Medio" placeholder="jogador 3">
-                <input type="text" id="team2-player4Medio" placeholder="jogador 4">
+            <div class="col-12 col-md-3 h-50">
+                <h3 class="h3 text-center">Ruim</h3>
+                <div class="input-group h-100">
+                    <textarea id="textarea2" class="form-control" aria-label="With textarea"></textarea>
+                </div>
             </div>
-
-            <div class="team">
-                <h2>Ruim</h2>
-                <input type="text" id="team3-player1Ruim" placeholder="jogador 1">
-                <input type="text" id="team3-player2Ruim" placeholder="jogador 2">
-                <input type="text" id="team3-player3Ruim" placeholder="jogador 3">
-                <input type="text" id="team3-player4Ruim" placeholder="jogador 4">
+            <div class="col-12 col-md-3 h-50">
+                <h3 class="h3 text-center">Médio</h3>
+                <div class="input-group h-100">
+                    <textarea id="textarea3" class="form-control" aria-label="With textarea"></textarea>
+                </div>
             </div>
-
-            <div class="team">
-                <h2>Convidados</h2>
-                <input type="text" id="team4-player1Convidado" placeholder="jogador 1">
-                <input type="text" id="team4-player2Convidado" placeholder="jogador 2">
-                <input type="text" id="team4-player3Convidado" placeholder="jogador 3">
-                <input type="text" id="team4-player4Convidado" placeholder="jogador 4">
+            <div class="col-12 col-md-3 h-50">
+                <h3 class="h3 text-center">Convidados</h3>
+                <div class="input-group h-100">
+                    <textarea id="textarea4" class="form-control" aria-label="With textarea"></textarea>
+                </div>
             </div>
         </div>
 
-        
-        
-            <button id="sortear" class="btn" > Sortear</button>
-       
+        <div class="d-grid gap-2 mt-5">
+            <button class="btn btn-primary btn-lg" type="button" onclick="convertTextToList()">Sortear</button>
+          </div>
 
 
     </div>
- <script src="./script.js"></script>
+
+    <div></div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

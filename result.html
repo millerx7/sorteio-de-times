@@ -1,88 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="result.css">
-    <title>Sorteador</title>
-</head>
-<body>
-    
-
-    <div class="container">
-
-        <div class="logo">
-            <img src="./img/logo.png" alt="logo racha raiz">
-            <h2>Times Sorteados</h2>
-        </div>
-
-        <div class="container-times">
-
-            <div class="team">
-                <h2>Time 1</h2>
-
-                <div id="grupo1">
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sorteio Times</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body class="bg-black">
+    <div class="d-flex justify-content-center pt-3">
+        <img src="./img/logo.png" alt="" width="100px">
+    </div>
+    <div class="d-flex justify-content-center">
+        <h1 class="display-5 text-light">Sorteio Times</h1>
+    </div>
+    <div class="container text-light pt-5 " style="height: 100%;">
+        <div class="row h-50 d-flex">
+            <div class="col-12 col-md-3 h-50">
+                <h3 class="h3 text-center">Time 1</h3>
+                <div id="grupo1" class="input-group h-100 " >
+                    
                 </div>
-                
             </div>
-            
-            <div class="team">
-                <h2>Time 2</h2>
-
-                <div id="grupo2">
+            <div class="col-12 col-md-3 h-50">
+                <h3 class="h3 text-center">Time 2</h3>
+                <div id="grupo2" class="input-group h-100 ">
+                    
                 </div>
-                
             </div>
-
-            <div class="team" >
-                <h2>Time 3</h2>
-
-                <div id="grupo3">
+            <div class="col-12 col-md-3 h-50">
+                <h3 class="h3 text-center">Time 3</h3>
+                <div id="grupo3" class="input-group h-100">
+                    
                 </div>
-              
             </div>
-
-            <div class="team" >
-                <h2>Time 4</h2>
-
-                <div id="grupo4">
+            <div class="col-12 col-md-3 h-50">
+                <h3 class="h3 text-center">Time 4</h3>
+                <div id="grupo4" class="input-group h-100 ">
+                  
                 </div>
-            
             </div>
         </div>
-       
 
+        <div class="d-grid gap-2 mt-5">
+            <button type="button" class="btn btn-primary btn-lg"><a class="text-black text-decoration-none" href="./index.html"><img style="width: 50px; padding: 10px;" src="./img/botao-voltar.png">Voltar</a></button>
+          </div>
 
     </div>
-    <script> // Recuperar os dados dos grupos do localStorage 
-    const grupo1 = JSON.parse(localStorage.getItem('grupo1')); 
-    const grupo2 = JSON.parse(localStorage.getItem('grupo2')); 
-    const grupo3 = JSON.parse(localStorage.getItem('grupo3')); 
-    const grupo4 = JSON.parse(localStorage.getItem('grupo4')); 
-    // Função para criar e retornar um parágrafo com o conteúdo do grupo 
-    function criarParagrafo(grupo) {
-    let lista = document.createElement("ul");
-    grupo.forEach(jogador => {
-        let item = document.createElement("li");
-        item.textContent = jogador;
-        item.style.color = "black";
-        lista.appendChild(item);
-    });
-    return lista;
-}
 
+    <div></div>
 
-        // Exibir os grupos no HTML 
-        document.getElementById('grupo1').appendChild(criarParagrafo(grupo1)); 
-        document.getElementById('grupo2').appendChild(criarParagrafo(grupo2)); 
-        document.getElementById('grupo3').appendChild(criarParagrafo(grupo3)); 
-        document.getElementById('grupo4').appendChild(criarParagrafo(grupo4)); 
-
-        // Limpar localStorage 
-        localStorage.removeItem('grupo1'); 
-        localStorage.removeItem('grupo2'); 
-        localStorage.removeItem('grupo3'); 
-        localStorage.removeItem('grupo4'); 
-</script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    <script src="./result.js"></script>
 </body>
 </html>
